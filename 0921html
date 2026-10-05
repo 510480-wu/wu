@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>0921.html</title>
+		
+		<style> 
+		/* 選擇器:selector 有三種 標籤名稱、#id、.class */
+		/*
+			display: block/inline/inline-block;
+			width: px; pixal像素
+			height: px;
+		
+			color: 前景顏色
+			background-color: 背景顏色
+
+			
+		*/
+			p {
+				background-color: rgb(172, 235, 180);
+			}
+			#p1 {
+				background-color: lightblue;
+			}
+			.c1 {
+				color: red;
+			}
+			#d1 {
+				background-color: hsl(20, 60%, 62%);
+				height: 500px;
+				width: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="p1" class="c1">第一個段落<br>123</p>
+		<p style="color:blue">第二個段落</p>
+		<p class="c1" style="color:black">第三個段落</p>
+		<div id="d1" class="dc1"></div>
+		<div class="dc1"></div>
+	</body>
+</html>
