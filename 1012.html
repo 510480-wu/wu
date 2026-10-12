@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>1012.html</title>
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    #d1{
+        background-image: linear-gradient(0deg,red,orange,yellow,green,blue,purple);/*線性漸層*/
+    }
+    #d2{
+        background-image: linear-gradient(rgb(0, 255, 64),rgb(0, 110, 255));
+        width: 400px;
+        height: 300px;
+    }
+    #d3{
+        background-image: radial-gradient(black,rgb(73, 72, 72),rgb(161, 159, 159),rgb(207, 207, 207),rgb(255, 255, 255));
+    }
+    #d4{/*圓錐*/
+        background-image: conic-gradient(red,rgb(80, 243, 80),rgb(40, 40, 243),red);
+    }
+    #d5{/*圓錐*/
+        background-image: conic-gradient(from 90deg,red,rgb(80, 243, 80),rgb(40, 40, 243),red);
+    }
+    #d6{
+        background-image: linear-gradient(90deg,rgb(0, 0, 0) 30%,rgb(255, 255, 255) 50%,rgb(0, 0, 0) 30%);
+    }
+    #d7{
+        background-image: repeating-linear-gradient(90deg,yellow 30%,rgb(0, 225, 255) 50%,yellow 30%);
+    }
+    #d8{
+        background-image: radial-gradient(circle,red 33%,rgb(0, 0, 0) 33%,rgb(0, 0, 0) 66%);
+    }
+    #d9{
+        background-image: repeating-radial-gradient(circle,red 30%,white 35%,red 40%);
+    }
+
+
+
+
+
+    @keyframes a1 {
+      0%{background-image: linear-gradient(90deg,red,orange 50%);}  
+      8%{background-image: linear-gradient(90deg,red,orange 40%);}  
+      16%{background-image: linear-gradient(90deg,red,orange 30%);}  
+      20%{background-image: linear-gradient(90deg,red,orange 30%);}  
+      50%{background-image: linear-gradient(90deg,red,orange 70%);}  
+      60%{background-image: linear-gradient(90deg,red,orange 80%);}  
+      78%{background-image: linear-gradient(90deg,red,orange 60%);}  
+      100%{background-image: linear-gradient(90deg,red,orange 10%);}  
+
+    }
+    #a1{
+        animation: a1 1s infinite linear;
+    }
+    @keyframes a2 {
+      0%{background-image: linear-gradient(0deg,red,orange 50%);}  
+      8%{background-image: linear-gradient(45deg,red,orange 40%);}
+      16%{background-image: linear-gradient(90deg,red,orange 30%);}  
+      20%{background-image: linear-gradient(125deg,red,orange 30%);}  
+      50%{background-image: linear-gradient(180deg,red,orange 70%);}  
+      60%{background-image: linear-gradient(190deg,red,orange 80%);}  
+      78%{background-image: linear-gradient(300deg,red,orange 60%);}  
+      100%{background-image: linear-gradient(350deg,red,orange 10%);} } 
+    #a2{
+        animation: a2 1s infinite linear ;
+    }
+    @keyframes a3 {
+      0%{background-image: radial-gradient(white,black 50%);}  
+      8%{background-image: radial-gradient(white,black 40%);}
+      16%{background-image: radial-gradient(white,black 30%);}  
+      20%{background-image: radial-gradient(white,black 30%);}  
+      50%{background-image: radial-gradient(white,black 70%);}  
+      60%{background-image: radial-gradient(white,black 80%);}  
+      78%{background-image: radial-gradient(white,black 60%);}  
+      100%{background-image: radial-gradient(white,black 10%);} } 
+      #a3{
+        animation: a3 1s infinite linear;
+      }
+      @keyframes a4 {
+        0%{background-image: repeating-radial-gradient(circle,red 30%,white 35%,red 40%);}
+        50%{ background-image: repeating-radial-gradient(circle,red 30%,white 35%,red 40%);}
+        100%{background-image: repeating-radial-gradient(circle,red 30%,white 35%,red 40%);}
+      }
+      #a4{
+        animation: a4 1s infinite linear;
+      }
+</style>
+
+
+</head>
+
+
+<body>
+<div id="d1"></div>
+<div id="d2"></div>
+<div id="d3"></div>
+<div id="d4"></div>
+<div id="d5"></div>
+<div id="d6"></div>
+<div id="d7"></div>
+<div id="d8"></div>
+<div id="d9"></div>
+
+
+
+<div id="a1"></div>
+<div id="a2"></div>
+<div id="a3"></div>
+<div id="a4"></div>
+</body>
+</html>
