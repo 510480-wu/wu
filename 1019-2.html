@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1019.html-2</title>
+    <style>
+        div{
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;
+            margin: 50px;
+        }
+        #d1{
+            transform: rotate(45deg);/*轉*/
+        }
+        #d2{
+            transform: rotate(125deg);/*轉*/
+        }
+        #d3{
+            transform: scale(1,2);/*倍率*/
+        }
+        #d4{
+            transform: translate(20px,10px);/*2單位*/
+        }
+        #d5:hover{
+            transform: rotate(361deg) translate(45px);
+        }
+        #d5{
+            transition: transform 5s;
+        }
+        #d6:hover{
+            transform: rotate(125deg) translate(45px);
+        }
+        #d7:hover{
+            transform: background-color red 1s;
+        }        
+        #d7{
+            background-color: rgb(69, 255, 199);
+            width: 300px;
+        }
+        #d8{
+            box-shadow:  10px 10px;
+        }
+        #d9{
+            box-shadow: 5px 10px 10px;
+        }
+        #d10{
+            box-shadow: 30px 10px 10px;
+        }
+        #d11{
+            font-size: 100px;
+            text-shadow: 5px 5px 10px red;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div><br>
+    <div id="d6"></div><br>
+    <div id="d7"></div>
+    <hr>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div><br>
+    <div id="d11">文字</div>
+</body>
+
+</html>
